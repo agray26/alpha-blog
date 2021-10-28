@@ -1,10 +1,12 @@
 class PagesController < ActionController::Base
-    def home
-      respond_to do |format|
-        format.html { render :home }
-      end
-    end
+  layout 'application'
 
-    def about
+  def home
+    respond_to do |format|
+      format.html { render :home }
     end
+  end
+
+  def about
+  end
 end
